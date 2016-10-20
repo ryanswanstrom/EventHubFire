@@ -14,6 +14,7 @@ Here are some steps to rebuild this example:
 1. Click + Consumer Group, name it cgroup
 1. Click Shared Access Policies 
 1. Click + Add, name it all-policy
+1. Note the *Connection string–primary key*, it will be needed later
 
 ## Create VS Project
 
@@ -30,6 +31,7 @@ Here are some steps to rebuild this example:
 	var ehClient = EventHubClient.CreateFromConnectionString("<connection-string>");
 	ehClient.SendAsync(new EventData(Encoding.UTF8.GetBytes("Hello World, This is a message.")));
 	```
+1. Replace *<connection-string>* with the connection string from the Event Hub
 1. For extra clarity, add two more lines to print out a message and stall the command-line
 
 	```C#
