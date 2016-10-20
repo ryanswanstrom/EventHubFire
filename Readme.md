@@ -37,3 +37,4 @@ Here are some steps to rebuild this example:
 	Console.ReadLine();
 	```
 1. Click the green arrow to start
+1. BOOM! You should now have sent your first message to an event hub. Go to the Azure Portal and you should be able to see that 1 message has been received (it might take a few minutes to appear on the website).
