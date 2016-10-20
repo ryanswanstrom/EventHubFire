@@ -25,10 +25,10 @@ Here are some steps to rebuild this example:
 1. Click install, and agree to the terms
 1. Go to Program.cs, add `using Microsoft.ServiceBus.Messaging;`
 1. Then add the following code block with `Main` function
-```C#
-var ehClient = EventHubClient.CreateFromConnectionString("<connection-string>");
-ehClient.SendAsync(new EventData(Encoding.UTF8.GetBytes("Hello World, This is a message.")));
-```
+	```C#
+	var ehClient = EventHubClient.CreateFromConnectionString("<connection-string>");
+	ehClient.SendAsync(new EventData(Encoding.UTF8.GetBytes("Hello World, This is a message.")));
+	```
 1. For extra clarity, add two more lines to print out a message and stall the command-line
 ```C#
 Console.WriteLine("Message sent");
